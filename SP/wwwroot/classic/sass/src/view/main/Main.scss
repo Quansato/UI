@@ -71,6 +71,10 @@
     @include responsivecolumn-item(33.33%);
 }
 
+.big-25 {
+    @include responsivecolumn-item(25%);
+}
+
 .big-20 {
     @include responsivecolumn-item(20%);
 }

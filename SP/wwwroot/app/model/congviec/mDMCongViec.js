@@ -110,3 +110,34 @@ Ext.define("Admin.model.congviec.mDMDetailCongViec", {
         { name: "ngayketThuc", type: "date", format: 'm/d/Y' },
     ]
 });
+
+Ext.define("Admin.model.congviec.mDMReportCongViec", {
+    extend: "Ext.data.Model",
+    idProperty: "mareport",
+    fields: [
+        { name: "mareport", type: "int" },
+        { name: "hoanthanh", type: "int" },
+        { name: "hoanthanhMuon", type: "int" },
+        { name: "tilehoanThanh", type: "string" },
+        { name: "tilehoanthanhMuon", type: "string" },
+        { name: "thoigianhoanThanh", type: "string" },
+        { name: "mtbf", type: "string" },
+        { name: "mttr",  type: "float" },
+        { name: "downtime", type: "float" },
+        { name: "partused", type: "string" },
+        
+    ]
+});
+
+/*Ext.define("Admin.model.congviec.mDMCostCongViec", {
+    extend: "Ext.data.Model",
+    idProperty: "maCost",
+    fields: [
+        { name: "maCost", type: "int" },
+        { name: "nameCost", type: "string" },
+        { name: "data1", type: "float" },
+       *//* { name: "invoiceCost", type: "float" },
+        { name: "partcostduKien", type: "float" },
+        { name: "laborcostduKien", type: "float" },*//*
+    ]
+});*/

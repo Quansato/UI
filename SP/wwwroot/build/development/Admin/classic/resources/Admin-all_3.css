@@ -1,3 +1,10 @@
+/* F:/Ext/SP/SP/wwwroot/ext/classic/theme-neutral/sass/src/button/Button.scss:686 */
+.x-btn-wrap-soft-green-large.x-btn-split-bottom:after {
+    height: 28px;
+    content: "\f0d7";
+    font: 24px/28px FontAwesome;
+    color: #f0f0f0;
+}
 /* F:/Ext/SP/SP/wwwroot/ext/classic/theme-neutral/sass/src/button/Button.scss:719 */
 .x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-soft-green-large {
     padding-right: 10px;

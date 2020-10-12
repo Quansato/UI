@@ -37,7 +37,7 @@ Ext.define('Admin.store.NavigationTree', {
                     {
                         text: 'Lập lịch bảo trì',
                         iconCls: 'x-fa fa-calendar',
-                        viewType: 'dsdmdexuat',
+                        viewType: 'customdashboard',
                         leaf: true
                     },
                 ]

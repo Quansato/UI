@@ -132,7 +132,6 @@ Ext.define('Admin.store.congviec.sDMNhomCongViec', {
 
 Ext.define('Admin.store.congviec.sDMDetailCongViec', {
     extend: 'Ext.data.Store',
-
     alias: 'store.sdmcongviec-detailcv',
     model: "Admin.model.congviec.mDMDetailCongViec",
 
@@ -239,6 +238,98 @@ Ext.define('Admin.store.congviec.sDMDetailCongViec', {
                 ngaybatDau: '08/08/2020',
                 ngayketThuc: '09/09/2020'
             },
+
+        ]
+    },
+
+    proxy: {
+        type: 'memory',
+        reader: {
+            type: 'json',
+            rootProperty: 'items'
+        }
+    }
+});
+
+Ext.define('Admin.store.congviec.sDMReportCongViec', {
+    extend: 'Ext.data.Store',
+    alias: 'store.sdmreportcv',
+    model: "Admin.model.congviec.mDMReportCongViec",
+    storeId: 'dataviewstore',
+    data: {
+        items: [
+            {
+                mareport: 1,
+                hoanthanh: 8,
+                hoanthanhMuon: 10,
+                tilehoanThanh: '44.44 %',
+                tilehoanthanhMuon: '55.55 %',
+                thoigianhoanThanh: '22.5 hrs',
+                mtbf: 'N/A',
+                mttr: '7.6',
+                downtime: '3.47',
+                partused: '6.250',
+            }
+
+        ]
+    },
+
+    proxy: {
+        type: 'memory',
+        reader: {
+            type: 'json',
+            rootProperty: 'items'
+        }
+    }
+});
+
+Ext.define('Admin.store.congviec.sDMCostCongViec', {
+    extend: 'Ext.data.Store',
+    alias: 'store.sdmcostcv',
+    fields: ['nameCost', 'data1'],
+    data: {
+        items: [
+            {
+                nameCost: 'Part Cost',
+                data1:1231.4
+            }, {
+                nameCost: 'Labor Cost',
+                data1: 231.4
+            }, {
+                nameCost: 'Invoice Cost',
+                data1: 423.7
+            }
+
+        ]
+    },
+
+    proxy: {
+        type: 'memory',
+        reader: {
+            type: 'json',
+            rootProperty: 'items'
+        }
+    }
+});
+
+Ext.define('Admin.store.congviec.sDMCostDuKienCongViec', {
+    extend: 'Ext.data.Store',
+    alias: 'store.sdmcostdukiencv',
+    fields: ['month', 'labor','parts'],
+    data: {
+        items: [
+            { month: 'Jan, 2021', labor: 0, parts: 327},
+            { month: 'Feb, 2021', labor: 0, parts: 244 },
+            { month: 'Mar, 2021', labor: 0, parts: 211},
+            { month: 'Apr, 2021', labor: 0, parts: 110 },
+            { month: 'May, 2021', labor: 0, parts: 37 },
+            { month: 'Jun, 2021', labor: 0, parts: 222 },
+            { month: 'Jul, 2021', labor: 0, parts: 101 },
+            { month: 'Aug, 2021', labor: 0, parts: 327 },
+            { month: 'Sep, 2021', labor: 0, parts: 327 },
+            { month: 'Oct, 2021', labor: 0, parts: 327 },
+            { month: 'Nov, 2021', labor: 0, parts: 327 },
+            { month: 'Dec, 2021', labor: 0, parts: 327 }
 
         ]
     },
